@@ -26,7 +26,7 @@ const PRODUCTS_DB = [
     price: 3500,
     originalPrice: 3500,
     discount: 0,
-    image: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Crect fill="%23d4562a" width="200" height="200"/%3E%3Ctext x="50%25" y="50%25" font-size="24" fill="white" text-anchor="middle" dy=".3em" font-weight="bold"%3EDangote%3C/text%3E%3C/svg%3E',
+    image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=500&fit=crop',
     description: 'Premium quality Dangote cement for all construction needs',
     specifications: {
       weight: '50kg',
@@ -46,7 +46,7 @@ const PRODUCTS_DB = [
     price: 3200,
     originalPrice: 3368,
     discount: 5,
-    image: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Crect fill="%239b3d1f" width="200" height="200"/%3E%3Ctext x="50%25" y="50%25" font-size="20" fill="white" text-anchor="middle" dy=".3em" font-weight="bold"%3ECimencam%3C/text%3E%3C/svg%3E',
+    image: 'https://images.unsplash.com/photo-1581092163562-40460bfda00a?w=500&h=500&fit=crop',
     description: 'Cameroon-made high-quality cement',
     specifications: {
       weight: '50kg',
@@ -66,7 +66,7 @@ const PRODUCTS_DB = [
     price: 4500,
     originalPrice: 4500,
     discount: 0,
-    image: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Crect fill="%23333333" width="200" height="200"/%3E%3Ctext x="50%25" y="50%25" font-size="18" fill="white" text-anchor="middle" dy=".3em" font-weight="bold"%3EIron Rod 12mm%3C/text%3E%3C/svg%3E',
+    image: 'https://images.unsplash.com/photo-1513241556861-c3574b1f25ee?w=500&h=500&fit=crop',
     description: 'High tensile strength reinforcing rod',
     specifications: {
       diameter: '12mm',
@@ -86,7 +86,7 @@ const PRODUCTS_DB = [
     price: 8000,
     originalPrice: 8000,
     discount: 0,
-    image: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Crect fill="%23262626" width="200" height="200"/%3E%3Ctext x="50%25" y="50%25" font-size="18" fill="white" text-anchor="middle" dy=".3em" font-weight="bold"%3EIron Rod 16mm%3C/text%3E%3C/svg%3E',
+    image: 'https://images.unsplash.com/photo-1504917595217-3404ee9c6bf0?w=500&h=500&fit=crop',
     description: 'Heavy-duty reinforcing rod for major projects',
     specifications: {
       diameter: '16mm',
@@ -106,7 +106,7 @@ const PRODUCTS_DB = [
     price: 3200,
     originalPrice: 3555,
     discount: 10,
-    image: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Crect fill="%23404040" width="200" height="200"/%3E%3Ctext x="50%25" y="50%25" font-size="18" fill="white" text-anchor="middle" dy=".3em" font-weight="bold"%3EIron Rod 10mm%3C/text%3E%3C/svg%3E',
+    image: 'https://images.unsplash.com/photo-1541708258188-c4c91f1b3d1d?w=500&h=500&fit=crop',
     description: 'Standard reinforcing rod',
     specifications: {
       diameter: '10mm',
@@ -126,7 +126,7 @@ const PRODUCTS_DB = [
     price: 15000,
     originalPrice: 15000,
     discount: 0,
-    image: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Crect fill="%23c0c0c0" width="200" height="200"/%3E%3Ctext x="50%25" y="50%25" font-size="16" fill="%23333" text-anchor="middle" dy=".3em" font-weight="bold"%3EAluminum Roof%3C/text%3E%3C/svg%3E',
+    image: 'https://images.unsplash.com/photo-1605055831-a54b88e62c2f?w=500&h=500&fit=crop',
     description: 'Lightweight and durable aluminum roofing',
     specifications: {
       material: 'Aluminum',
@@ -147,7 +147,7 @@ const PRODUCTS_DB = [
     price: 12000,
     originalPrice: 12000,
     discount: 0,
-    image: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Crect fill="%23808080" width="200" height="200"/%3E%3Ctext x="50%25" y="50%25" font-size="18" fill="white" text-anchor="middle" dy=".3em" font-weight="bold"%3EZinc Roof%3C/text%3E%3C/svg%3E',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500&h=500&fit=crop',
     description: 'Traditional zinc roofing with excellent durability',
     specifications: {
       material: 'Zinc',
@@ -168,7 +168,7 @@ const PRODUCTS_DB = [
     price: 25000,
     originalPrice: 29411,
     discount: 15,
-    image: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Crect fill="%238b4513" width="200" height="200"/%3E%3Ctext x="50%25" y="50%25" font-size="14" fill="white" text-anchor="middle" dy=".3em" font-weight="bold"%3EStone-Coated%3C/text%3E%3C/svg%3E',
+    image: 'https://images.unsplash.com/photo-1469022563149-aa64dbd37dae?w=500&h=500&fit=crop',
     description: 'Premium roofing with stone coating for aesthetic appeal',
     specifications: {
       material: 'Stone-Coated Steel',
@@ -189,7 +189,7 @@ const PRODUCTS_DB = [
     price: 5000,
     originalPrice: 5000,
     discount: 0,
-    image: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Crect fill="%23a0522d" width="200" height="200"/%3E%3Ctext x="50%25" y="50%25" font-size="18" fill="white" text-anchor="middle" dy=".3em" font-weight="bold"%3EBricks%3C/text%3E%3C/svg%3E',
+    image: 'https://images.unsplash.com/photo-1517578514434-278c237eed92?w=500&h=500&fit=crop',
     description: 'Standard cement bricks for walls',
     specifications: {
       dimensions: '225x112x75mm',
@@ -208,7 +208,7 @@ const PRODUCTS_DB = [
     price: 1500,
     originalPrice: 1578,
     discount: 5,
-    image: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Crect fill="%23696969" width="200" height="200"/%3E%3Ctext x="50%25" y="50%25" font-size="18" fill="white" text-anchor="middle" dy=".3em" font-weight="bold"%3ENails%3C/text%3E%3C/svg%3E',
+    image: 'https://images.unsplash.com/photo-1579177425435-5b1b7e50c39a?w=500&h=500&fit=crop',
     description: 'Various sizes of nails for construction',
     specifications: {
       types: '2inch, 3inch, 4inch',

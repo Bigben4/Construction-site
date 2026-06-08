@@ -108,31 +108,39 @@ http://localhost:8000
 - Click "Edit" to change prices or stock
 - Switch tabs to view orders and analytics
 
-## 💰 Product Catalog
+## 💰 Product Catalog with Images
 
-Pre-loaded products ready to sell:
+Pre-loaded products with professional images ready to sell:
 
-**Cement Category:**
+### **Cement Category** 🏗️
 
-- Dangote Cement 50kg - 3,500 XAF
-- Cimencam Cement 50kg - 3,200 XAF (5% discount)
+| Product                                                                                               | Image                | Price              | Status   |
+| ----------------------------------------------------------------------------------------------------- | -------------------- | ------------------ | -------- |
+| ![Dangote Cement](https://images.unsplash.com/photo-1581092156856-c94b7f91f210?w=200&h=200&fit=crop)  | Dangote Cement 50kg  | 3,500 XAF          | In Stock |
+| ![Cimencam Cement](https://images.unsplash.com/photo-1581092163562-40460bfda00a?w=200&h=200&fit=crop) | Cimencam Cement 50kg | 3,200 XAF (5% off) | In Stock |
 
-**Iron Rods Category:**
+### **Iron Rods Category** ⚙️
 
-- 10mm x 12m - 3,200 XAF (10% discount)
-- 12mm x 12m - 4,500 XAF
-- 16mm x 12m - 8,000 XAF
+| Product                                                                                             | Image               | Price               | Status   |
+| --------------------------------------------------------------------------------------------------- | ------------------- | ------------------- | -------- |
+| ![Iron Rod 10mm](https://images.unsplash.com/photo-1541708258188-c4c91f1b3d1d?w=200&h=200&fit=crop) | Iron Rod 10mm x 12m | 3,200 XAF (10% off) | In Stock |
+| ![Iron Rod 12mm](https://images.unsplash.com/photo-1513241556861-c3574b1f25ee?w=200&h=200&fit=crop) | Iron Rod 12mm x 12m | 4,500 XAF           | In Stock |
+| ![Iron Rod 16mm](https://images.unsplash.com/photo-1504917595217-3404ee9c6bf0?w=200&h=200&fit=crop) | Iron Rod 16mm x 12m | 8,000 XAF           | In Stock |
 
-**Roofing Sheets Category:**
+### **Roofing Sheets Category** 🏠
 
-- Aluminum - 15,000 XAF
-- Zinc - 12,000 XAF
-- Stone-Coated - 25,000 XAF (15% discount)
+| Product                                                                                                    | Image                      | Price                | Status   |
+| ---------------------------------------------------------------------------------------------------------- | -------------------------- | -------------------- | -------- |
+| ![Aluminum Roofing](https://images.unsplash.com/photo-1605055831-a54b88e62c2f?w=200&h=200&fit=crop)        | Aluminum Roofing Sheet     | 15,000 XAF           | In Stock |
+| ![Zinc Roofing](https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=200&h=200&fit=crop)         | Zinc Roofing Sheet         | 12,000 XAF           | In Stock |
+| ![Stone-Coated Roofing](https://images.unsplash.com/photo-1469022563149-aa64dbd37dae?w=200&h=200&fit=crop) | Stone-Coated Roofing Sheet | 25,000 XAF (15% off) | In Stock |
 
-**Accessories Category:**
+### **Accessories Category** 🔨
 
-- Cement Bricks - 5,000 XAF
-- Nails Assorted - 1,500 XAF (5% discount)
+| Product                                                                                              | Image                     | Price              | Status   |
+| ---------------------------------------------------------------------------------------------------- | ------------------------- | ------------------ | -------- |
+| ![Cement Bricks](https://images.unsplash.com/photo-1517578514434-278c237eed92?w=200&h=200&fit=crop)  | Cement Bricks (500 units) | 5,000 XAF          | In Stock |
+| ![Nails Assorted](https://images.unsplash.com/photo-1579177425435-5b1b7e50c39a?w=200&h=200&fit=crop) | Nails Assorted Pack (2kg) | 1,500 XAF (5% off) | In Stock |
 
 ## ⚙️ Configuration
 
@@ -142,7 +150,7 @@ To customize for your business, edit `app.js` line 5-20:
 const CONFIG = {
   CURRENCY: "XAF",
   COMPANY_NAME: "BuildCam Construction Materials",
-  WHATSAPP_NUMBER: "+237612345678", // ← Change to your number
+  WHATSAPP_NUMBER: "+237679748159", // ← Your WhatsApp number for receiving orders
   DELIVERY_REGIONS: {
     Yaoundé: 2000,
     Douala: 2500,
@@ -152,22 +160,23 @@ const CONFIG = {
 };
 ```
 
+### Current Setup:
+
+- ✅ **WhatsApp Number**: +237679748159 (Configured)
+- ✅ **Payment Method**: WhatsApp only (All orders sent via WhatsApp)
+- ✅ **Currency**: FCFA (XAF)
+
 ## 🔄 How Orders Work
 
 ### Customer Places Order:
 
 1. Adds items to cart
 2. Goes to checkout
-3. Fills delivery information
-4. Selects payment method
-5. Clicks "Place Order"
-6. Unique order reference generated (e.g., ORD-XXXXX-XXXXXX)
-7. WhatsApp message auto-generated with:
-   - Order reference
-   - Customer details
-   - Products & quantities
-   - Total amount
-   - Delivery address
+3. Fills delivery information (Name, Phone, Email, Address)
+4. All orders sent via **WhatsApp** to +237679748159
+5. Unique order reference generated (e.g., ORD-XXXXX-XXXXXX)
+6. WhatsApp message auto-generated with complete order details
+7. Customer can complete payment via WhatsApp direct message
 
 ### WhatsApp Message Format:
 
