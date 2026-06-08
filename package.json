@@ -1,0 +1,12 @@
+{
+  "name": "construction-materials-ecommerce",
+  "version": "1.0.0",
+  "description": "Construction Materials E-commerce Website - HTML/CSS/JS",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8000 -c-1"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

@@ -1,23 +1,86 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>BuildMax</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details - BuildCam</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-page="product-details">
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        🏗️ BuildCam
+      </div>
+      <ul class="navbar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="index.html#why-us">Why Us</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="admin.html" style="color: var(--accent-color);">Admin</a></li>
+      </ul>
+      <a href="cart.html" class="cart-icon">
+        🛒
+        <span class="cart-count" style="display: none;">0</span>
+      </a>
+      <div class="mobile-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
 
-<header>
-    <div class="logo">BuildMax</div>
-</header>
+  <!-- Product Details -->
+  <section>
+    <div class="container">
+      <div id="product-details-container">
+        <!-- Populated by JavaScript -->
+      </div>
+    </div>
+  </section>
 
-<div class="container">
-    <div class="products">
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=1200">
-        </div>
+  <!-- Related Products -->
+  <section class="light-bg">
+    <div class="container">
+      <div id="related-products">
+        <!-- Populated by JavaScript -->
+      </div>
+    </div>
+  </section>
 
-        <div>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div>
+        <h4>About BuildCam</h4>
+        <p>Cameroon's leading supplier of premium construction materials.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>📞 +237 612 345 678</li>
+          <li>📧 info@buildcam.cm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 BuildCam. All rights reserved. 🇨🇲</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
             <h2>Dangote Cement 50kg</h2>
             <p>High quality cement for construction projects.</p>
             <h3>FCFA 6,500</h3>

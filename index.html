@@ -1,139 +1,214 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>BuildMax</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuildCam - Construction Materials Cameroon</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-
-<header>
-    <div class="logo">BuildMax</div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="about.html">About</a>
-        <a href="cart.html">Cart</a>
-        <a href="login.html">Login</a>
-    </nav>
-</header>
-
-<section class="hero">
-    <div class="hero-content">
-        <h1>Build Better<br> Build Stronger</h1>
-        <p>Your trusted construction materials supplier.</p>
-        <a href="shop.html" class="btn">Shop Now</a>
+<body data-page="home">
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        🏗️ BuildCam
+      </div>
+      <ul class="navbar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="cart.html" class="cart-icon">
+        🛒
+        <span class="cart-count" style="display: none;">0</span>
+      </a>
+      <div class="mobile-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
-</section>
+  </nav>
 
-<div class="container">
-    <h2>Featured Products</h2>
-    <div class="products">
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=1200">
-            <div class="card-content">
-                <h3>Roofing sheet</h3>
-                <p>FCFA 6,500</p>
-                <button onclick="addToCart({name:'Cement',price:6500})">Add to Cart</button>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200">
-            <div class="card-content">
-                <h3>12mm Iron rod</h3>
-                <p>FCFA 2,800</p>
-                <button onclick="addToCart({name:'Iron Rods',price:2800})">Add to Cart</button>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=1200">
-            <div class="card-content">
-                <h3>Dangote Cement</h3>
-                <p>FCFA 6,500</p>
-                <button onclick="addToCart({name:'Cement',price:6500})">Add to Cart</button>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200">
-            <div class="card-content">
-                <h3>Plumbing</h3>
-                <p>FCFA 2,800</p>
-                <button onclick="addToCart({name:'Iron Rods',price:2800})">Add to Cart</button>
-            </div>
-        </div>
-
-         <div class="card">
-            <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=1200">
-            <div class="card-content">
-                <h3>Cement</h3>
-                <p>FCFA 6,500</p>
-                <button onclick="addToCart({name:'Cement',price:6500})">Add to Cart</button>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200">
-            <div class="card-content">
-                <h3>Iron Rods</h3>
-                <p>FCFA 2,800</p>
-                <button onclick="addToCart({name:'Iron Rods',price:2800})">Add to Cart</button>
-            </div>
-        </div>
-
-         <div class="card">
-            <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=1200">
-            <div class="card-content">
-                <h3>Cement</h3>
-                <p>FCFA 6,500</p>
-                <button onclick="addToCart({name:'Cement',price:6500})">Add to Cart</button>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200">
-            <div class="card-content">
-                <h3>Iron Rods</h3>
-                <p>FCFA 2,800</p>
-                <button onclick="addToCart({name:'Iron Rods',price:2800})">Add to Cart</button>
-            </div>
-        </div>
-
-         <div class="card">
-            <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=1200">
-            <div class="card-content">
-                <h3>Cement</h3>
-                <p>FCFA 6,500</p>
-                <button onclick="addToCart({name:'Cement',price:6500})">Add to Cart</button>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200">
-            <div class="card-content">
-                <h3>Iron Rods</h3>
-                <p>FCFA 2,800</p>
-                <button onclick="addToCart({name:'Iron Rods',price:2800})">Add to Cart</button>
-            </div>
-        </div>
-
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Premium Construction Materials for Cameroon</h1>
+      <p>Quality cement, iron rods, roofing sheets, and building supplies delivered to your site</p>
+      <a href="products.html" class="btn btn-primary btn-lg">Shop Now</a>
     </div>
+  </section>
 
-   
-
-
+  <!-- Categories Section -->
+  <section class="light-bg">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Categories</h2>
+      </div>
+      <div class="categories-grid" id="categories-grid">
+        <!-- Populated by JavaScript -->
+      </div>
     </div>
+  </section>
 
-    
-</div>
+  <!-- Featured Products -->
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Featured Products</h2>
+        <p>Check out our best-selling and most popular items</p>
+      </div>
+      <div class="products-grid" id="featured-products">
+        <!-- Populated by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="light-bg" id="why-us">
+    <div class="container">
+      <div class="section-title">
+        <h2>Why Choose BuildCam?</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">✓</div>
+          <h3>Quality Guaranteed</h3>
+          <p>All our materials are sourced from trusted manufacturers and tested for quality.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💰</div>
+          <h3>Best Prices</h3>
+          <p>Competitive pricing with regular discounts for bulk orders and loyal customers.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚚</div>
+          <h3>Fast Delivery</h3>
+          <p>Reliable delivery across Cameroon with real-time tracking and updates.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📞</div>
+          <h3>Expert Support</h3>
+          <p>Our team is ready to help with product selection and technical advice.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💳</div>
+          <h3>Multiple Payments</h3>
+          <p>Accept MTN Money, Orange Money, bank transfer, and cash on delivery.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⭐</div>
+          <h3>Customer Reviews</h3>
+          <p>Read honest reviews from thousands of satisfied customers across Cameroon.</p>
+        </div>
+      </div>
+    </section>
+
+  <!-- Testimonials -->
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>What Our Customers Say</h2>
+      </div>
+      <div class="testimonials-grid" id="testimonials-grid">
+        <!-- Populated by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="light-bg" id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Get in Touch</h2>
+      </div>
+      <div style="max-width: 600px; margin: 0 auto;">
+        <form id="contact-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-required">Full Name</label>
+              <input type="text" name="name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-required">Email</label>
+              <input type="email" name="email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-required">Phone</label>
+            <input type="tel" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label class="form-required">Message</label>
+            <textarea name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Send Message</button>
+        </form>
+        
+        <div style="margin-top: 3rem; text-align: center;">
+          <h3>Contact Information</h3>
+          <p>📞 Phone: <strong>+237 612 345 678</strong></p>
+          <p>📧 Email: <strong>info@buildcam.cm</strong></p>
+          <p>📍 Location: <strong>Yaoundé, Cameroon</strong></p>
+          <p style="margin-top: 1.5rem;">
+            <a href="https://wa.me/237612345678" target="_blank" class="btn btn-primary">WhatsApp Us</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
 <a class="whatsapp-chat" href="https://wa.me/237612345678" target="_blank">WhatsApp Chat</a>
 
-<footer>© 2026 BuildMax Construction Materials</footer>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div>
+        <h4>About BuildCam</h4>
+        <p>We are Cameroon's leading supplier of premium construction materials. Serving contractors, builders, and hardware stores since 2020.</p>
+        <div class="social-links">
+          <a href="#" title="Facebook">f</a>
+          <a href="#" title="Twitter">𝕏</a>
+          <a href="#" title="Instagram">📷</a>
+          <a href="#" title="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul>
+          <li><a href="products.html?category=Cement">Cement</a></li>
+          <li><a href="products.html?category=Iron%20Rods">Iron Rods</a></li>
+          <li><a href="products.html?category=Roofing%20Sheets">Roofing Sheets</a></li>
+          <li><a href="products.html?category=Construction%20Accessories">Accessories</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Customer Support</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Track Order</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 BuildCam Construction Materials. All rights reserved. | Made in Cameroon 🇨🇲</p>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
